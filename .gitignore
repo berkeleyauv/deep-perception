@@ -1,3 +1,4 @@
 deep_perception/.env
 *.egg-info
 *__pycache__
+data/*/

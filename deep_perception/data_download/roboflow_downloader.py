@@ -20,4 +20,6 @@ class RoboflowDownloader(Downloader):
         """
         print("Downloading dataset from Roboflow")
         project = self.roboflow_instance.workspace(dataset_identifier["workspace"]).project(dataset_identifier["project"])
-        dataset = project.version(dataset_identifier["version"]).download(dataset_identifier["download_format"], location="./data")
+        dataset = project \
+                    .version(dataset_identifier["version"]) \
+                    .download(dataset_identifier["download_format"], location=f"./datasets/{dataset_identifier['project']}")
