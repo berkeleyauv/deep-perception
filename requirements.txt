@@ -1,2 +1,5 @@
 roboflow
 python-dotenv
+ultralytics
+torch
+wandb==8.0.186
